@@ -1,4 +1,4 @@
 #!/bin/sh
 
 SOB=$(git config user.name)
-grep -qs "^$SOB" "$1" || echo ". Cambio por @$SOB" >> "$1"
+grep -qs "^$SOB" "$1" || echo "| Done by @$SOB" >> "$1"
